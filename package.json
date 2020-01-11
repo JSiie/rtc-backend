@@ -1,0 +1,21 @@
+{
+  "name": "kizengo-backend-customer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "forever start server.js",
+    "stop": "if forever list | grep 'server.js'; then forever stop server.js; fi",
+    "restart": "if forever list | grep 'server.js'; then forever restart server.js; fi"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "forever": "^1.0.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.2.0"
+  }
+}
